@@ -1,7 +1,13 @@
 <?php
-	$server = "localhost";
-	$username = "root";
-	$password = "root";
-	$db = "stock";
-	$conn = mysqli_connect($server, $username, $password, $db);
+$server = "localhost";
+$username = "root";
+$password = "root";
+$db = "stock";
+
+try {
+    $conn = new PDO("mysql:host=$server;dbname=$db;charset=utf8", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erreur de connexion : " . $e->getMessage());
+}
 ?>

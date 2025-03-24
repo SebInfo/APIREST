@@ -1,3 +1,7 @@
-RewriteEngine On # Activer le module Rewrite
+RewriteEngine On
+
+# /produits ou /produits/ → produits.php
 RewriteRule ^produits/?$ produits.php [NC,L]
-RewriteRule ^[^/]+/(\d+)$ produits.php?id=$1
+
+# /produits/123 → produits.php?id=123
+RewriteRule ^produits/([0-9]+)$ produits.php?id=$1 [NC,L]
