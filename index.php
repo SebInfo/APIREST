@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test API Rest</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Test d'une API REST</h1>
 <table class="blueTable">
     <thead>
         <tr>
-            <th style="width:30%"><center>Route</center></th>
-            <th style="width:10%"><center>Méthode</center></th>
-            <th style="width:10%"><center>Type</center></th>
-            <th style="width:50%"><center>Description</center></th>
+            <th class="col-route">Route</th>
+            <th class="col-method">Méthode</th>
+            <th class="col-type">Type</th>
+            <th class="col-desc">Description</th>
         </tr>
     </thead>
     <tbody>

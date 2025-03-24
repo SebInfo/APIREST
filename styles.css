@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.blueTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.blueTable th {
+    background: #1C6EA4;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.blueTable td {
+    border: 1px solid #AAAAAA;
+    padding: 10px;
+}
+
+.blueTable tbody tr:nth-child(even) {
+    background-color: #D0E4F5;
+}
+
+.blueTable tbody tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+/* Largeurs des colonnes */
+.col-route {
+    width: 30%;
+}
+
+.col-method {
+    width: 10%;
+}
+
+.col-type {
+    width: 10%;
+}
+
+.col-desc {
+    width: 50%;
+}
